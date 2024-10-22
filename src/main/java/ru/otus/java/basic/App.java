@@ -1,12 +1,39 @@
 package ru.otus.java.basic;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
-        greetings();
-        checkSign(Randomness.generateRandomInteger(), Randomness.generateRandomInteger(), Randomness.generateRandomInteger());
-        selectColor(Randomness.generateRandomPositiveInteger(2));
-        compareNumbers();
-        addOrSubtractAndPrint(Randomness.generateRandomInteger(), Randomness.generateRandomInteger(), Randomness.generateRandomBoolean());
+        String[] methods = {"greetings", "checkSign", "selectColor", "compareNumbers", "addOrSubtractAndPrint"};
+        int number = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Укажите номер метода для его выполнения:");
+        printMethods(methods);
+        while (number <= 0 || number > methods.length) {
+            number = scanner.nextInt();
+            System.out.println(number <= 0 || number > methods.length ? "Метода с таким номером не существует, повторите ввод:" : "Выбран метод: " + methods[number - 1]);
+        }
+
+        if (number == 1) {
+            greetings();
+
+        }
+        if (number == 2) {
+            checkSign(Randomness.generateRandomInteger(), Randomness.generateRandomInteger(), Randomness.generateRandomInteger());
+
+        }
+        if (number == 3) {
+            selectColor(Randomness.generateRandomPositiveInteger(2));
+
+        }
+        if (number == 4) {
+            compareNumbers();
+
+        }
+        if (number == 5) {
+            addOrSubtractAndPrint(Randomness.generateRandomInteger(), Randomness.generateRandomInteger(), Randomness.generateRandomBoolean());
+
+        }
     }
 
     /**
@@ -67,5 +94,16 @@ public class App {
      */
     public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
         System.out.println(increment ? initValue + delta : initValue - delta);
+    }
+
+    /**
+     * Print methods
+     *
+     * @param methods Array of available methods
+     */
+    public static void printMethods(String[] methods) {
+        for (int i = 0; i < methods.length; i++) {
+            System.out.println((i + 1) + ": " + methods[i]);
+        }
     }
 }
