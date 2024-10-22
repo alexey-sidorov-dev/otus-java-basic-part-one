@@ -3,9 +3,10 @@ package ru.otus.java.basic;
 public class App {
     public static void main(String[] args) {
         greetings();
-        checkSign(generateRandomInteger(), generateRandomInteger(), generateRandomInteger());
-        selectColor(generateRandomPositiveInteger(2));
+        checkSign(Randomness.generateRandomInteger(), Randomness.generateRandomInteger(), Randomness.generateRandomInteger());
+        selectColor(Randomness.generateRandomPositiveInteger(2));
         compareNumbers();
+        addOrSubtractAndPrint(Randomness.generateRandomInteger(), Randomness.generateRandomInteger(), Randomness.generateRandomBoolean());
     }
 
     /**
@@ -19,7 +20,7 @@ public class App {
     }
 
     /**
-     * Chek sing for sum of three numbers
+     * Check sing for sum of three numbers
      *
      * @param a First number
      * @param b Second number
@@ -47,27 +48,24 @@ public class App {
         System.out.println(message);
     }
 
+    /**
+     * Compare two integer numbers
+     */
     public static void compareNumbers() {
-        int a = generateRandomInteger();
-        int b = generateRandomInteger();
+        int a = Randomness.generateRandomInteger();
+        int b = Randomness.generateRandomInteger();
 
         System.out.println(a >= b ? "a >= b" : "a < b");
     }
-    /**
-     * Generate random integer number
-     *
-     * @return Random integer number
-     */
-    public static int generateRandomInteger() {
-        return (int) ((Math.random() - 0.5) * Math.pow(10, (int) (Math.random() * 10)));
-    }
 
     /**
-     * Generate random positive integer number
+     * Add or subtract delta from initial value
      *
-     * @return Random integer number
+     * @param initValue Initial value
+     * @param delta     Provided delta
+     * @param increment Operation flag
      */
-    public static int generateRandomPositiveInteger(int p) {
-        return (int) ((Math.random()) * Math.pow(10, p));
+    public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
+        System.out.println(increment ? initValue + delta : initValue - delta);
     }
 }
