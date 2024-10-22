@@ -4,6 +4,7 @@ public class App {
     public static void main(String[] args) {
         greetings();
         checkSign(generateRandomInteger(), generateRandomInteger(), generateRandomInteger());
+        selectColor(generateRandomPositiveInteger(2));
     }
 
     /**
@@ -28,11 +29,38 @@ public class App {
     }
 
     /**
+     * Select color
+     *
+     * @param data Initial number
+     */
+    public static void selectColor(int data) {
+        String message = "Красный";
+
+        if (data >= 10 && data <= 20) {
+            message = "Желтый";
+        }
+        if (data >= 20) {
+            message = "Зеленый";
+        }
+
+        System.out.println(message);
+    }
+
+    /**
      * Generate random integer number
      *
      * @return Random integer number
      */
     public static int generateRandomInteger() {
         return (int) ((Math.random() - 0.5) * Math.pow(10, (int) (Math.random() * 10)));
+    }
+
+    /**
+     * Generate random positive integer number
+     *
+     * @return Random integer number
+     */
+    public static int generateRandomPositiveInteger(int p) {
+        return (int) ((Math.random()) * Math.pow(10, p));
     }
 }
