@@ -5,6 +5,7 @@ public class App {
         greetings();
         checkSign(generateRandomInteger(), generateRandomInteger(), generateRandomInteger());
         selectColor(generateRandomPositiveInteger(2));
+        compareNumbers();
     }
 
     /**
@@ -46,6 +47,12 @@ public class App {
         System.out.println(message);
     }
 
+    public static void compareNumbers() {
+        int a = generateRandomInteger();
+        int b = generateRandomInteger();
+
+        System.out.println(a >= b ? "a >= b" : "a < b");
+    }
     /**
      * Generate random integer number
      *
