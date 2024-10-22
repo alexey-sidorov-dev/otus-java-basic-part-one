@@ -9,6 +9,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Укажите номер метода для его выполнения:");
         printMethods(methods);
+
         while (number <= 0 || number > methods.length) {
             number = scanner.nextInt();
             System.out.println(number <= 0 || number > methods.length ? "Метода с таким номером не существует, повторите ввод:" : "Выбран метод: " + methods[number - 1]);
