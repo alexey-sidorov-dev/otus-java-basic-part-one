@@ -6,6 +6,7 @@ public class App {
     public static void main(String[] args) {
         String[] methods = {"greetings", "checkSign", "selectColor", "compareNumbers", "addOrSubtractAndPrint"};
         int number = 0;
+        String str = "Hello World from Java";
         Scanner scanner = new Scanner(System.in);
         System.out.println("Укажите номер метода для его выполнения:");
         printMethods(methods);
@@ -16,7 +17,7 @@ public class App {
         }
 
         if (number == 1) {
-            greetings();
+            greetings(str);
 
         }
         if (number == 2) {
@@ -40,8 +41,8 @@ public class App {
     /**
      * Print words in one column
      */
-    private static void greetings() {
-        String[] words = {"Hello", "World", "from", "Java"};
+    private static void greetings(String str) {
+        String[] words = str.split(" ");
         for (String word : words) {
             System.out.println(word);
         }
