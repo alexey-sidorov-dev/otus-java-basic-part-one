@@ -17,6 +17,8 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v3
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
           args:
             -Dsonar.projectKey=alexey-sidorov-dev_otus-java-basic-part-one
             -Dsonar.organization=alexey-sidorov-dev
+          projectBaseDir: .
