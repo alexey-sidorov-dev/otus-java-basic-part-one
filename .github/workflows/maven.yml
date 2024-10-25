@@ -2,6 +2,9 @@ name: Java CI with Maven
 
 on: pull_request
 
+permissions:
+  pull-requests: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,3 +19,15 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn clean -B package --file pom.xml
+  analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Analyze with SonarCloud
+        uses: SonarSource/sonarcloud-github-action@v3
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args:
+            -Dsonar.projectKey=alexey-sidorov-dev_otus-java-basic-part-one
+            -Dsonar.organization=alexey-sidorov-dev
+          projectBaseDir: .
