@@ -15,7 +15,7 @@ public class Randomness {
      *
      * @return Random integer number
      */
-    public static int generateRandomPositiveInteger(int p) {
+    public static int generateRandomInteger(int p) {
         return (int) ((Math.random()) * Math.pow(10, p));
     }
 

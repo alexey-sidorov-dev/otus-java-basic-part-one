@@ -5,6 +5,7 @@
 ---
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Java%20CI%20with%20Maven/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Dependency%20Review/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
+
 [![LICENSE](https://img.shields.io/badge/license-ISC-brightgreen.svg)](ISC)
 
 ### Цель
@@ -25,4 +26,4 @@ _initValue_ прибавить _delta_ и отпечатать в консоль
 6. Вызовите последовательно каждый метод из метода _main()_;
 7. *При запуске приложения запросите у пользователя число от 1 до 5, после ввода которого выполните метод,
 соответствующий указанному номеру (т.е. при вводе 1 выполняется метод _greetings_, 2 - _checkSign_ и т.д.). Если методам
-требуются аргументы, то сгенерируйте их через _Math.random())_.
+требуются аргументы, то сгенерируйте их через _Math.random()_.

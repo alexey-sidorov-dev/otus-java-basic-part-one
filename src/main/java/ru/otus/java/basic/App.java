@@ -25,7 +25,7 @@ public class App {
 
         }
         if (number == 3) {
-            selectColor(Randomness.generateRandomPositiveInteger(2));
+            selectColor(Randomness.generateRandomInteger(2));
 
         }
         if (number == 4) {
