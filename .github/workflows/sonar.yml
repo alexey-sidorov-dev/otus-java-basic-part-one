@@ -15,4 +15,18 @@ jobs:
           distribution: corretto
           cache: maven
       - name: Verify with Sonar
-        run: mvn clean -B verify sonar:sonar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn clean -B verify sonar:sonar -Dstyle.color=always
+        with:
+          args:
+            -Dsonar.projectKey=alexey-sidorov-dev_otus-java-basic-part-one
+            -Dsonar.projectName=otus-java-basic-part-one
+            -Dsonar.projectVersion=1.0
+            -Dsonar.organization=alexey-sidorov-dev
+            -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.login=$SONAR_TOKEN
+            -Dsonar.coverage.jacoco.xmlReportPaths=./target/site/jacoco/jacoco.xml
+
+
