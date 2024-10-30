@@ -4,8 +4,8 @@
 
 ---
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Java%20CI%20with%20Maven/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
+[![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Sonar%20Scanner/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Dependency%20Review/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
-
 [![LICENSE](https://img.shields.io/badge/license-ISC-brightgreen.svg)](ISC)
 
 ### Цель

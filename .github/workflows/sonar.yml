@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Sonar Scanner
 
 on: pull_request
 
@@ -14,5 +14,5 @@ jobs:
           java-version: 17
           distribution: corretto
           cache: maven
-      - name: Build with Maven
-        run: mvn clean -B package -Dstyle.color=always
+      - name: Verify with Sonar
+        run: mvn clean -B verify sonar:sonar
