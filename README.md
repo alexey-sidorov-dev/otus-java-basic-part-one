@@ -7,7 +7,7 @@
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/SonarCloud%20Scanner/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Dependency%20Review/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
 [![LICENSE](https://img.shields.io/badge/license-ISC-brightgreen.svg)](ISC)
-
+mvn
 ### Цель
 
 Научиться решать простые задачи с использованием изученных конструкций языка Java.

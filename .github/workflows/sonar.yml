@@ -14,5 +14,7 @@ jobs:
           java-version: 17
           distribution: corretto
           cache: maven
-      - name: Analyze with Sonar
-        run: mvn clean -B verify sonar:sonar
+      - name: Build and Analyze with Sonar
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn clean -B verify -Dstyle.color=always
