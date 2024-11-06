@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.*;
-import ru.otus.java.basic.Randomness;
 
 import static ru.otus.java.basic.Randomness.*;
 

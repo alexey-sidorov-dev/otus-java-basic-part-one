@@ -3,16 +3,19 @@
 ## Практика по основам языка Java. Часть 1.
 
 ---
-[![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Java%20CI%20with%20Maven/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
-[![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/SonarCloud%20Scanner/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
+[![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Java%20CI/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Dependency%20Review/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
-[![LICENSE](https://img.shields.io/badge/license-ISC-brightgreen.svg)](ISC)
-mvn
+[![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/SonarCloud%20Scanner/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=alexey-sidorov-dev_otus-java-basic-part-one&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=alexey-sidorov-dev_otus-java-basic-part-one)
+[![License](https://img.shields.io/github/license/alexey-sidorov-dev/otus-java-basic-part-one)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/blob/main/LICENSE)
+
 ### Цель
 
 Научиться решать простые задачи с использованием изученных конструкций языка Java.
 
 ### Задания
+
+[README.md](README.md)
 
 1. Реализуйте метод _greetings()_, который при вызове должен отпечатать в столбец 4 слова: Hello, World, from, Java;
 2. Реализуйте метод _checkSign()_, принимающий в качестве аргументов 3 int переменные _a_, _b_ и _c_. Метод должен
