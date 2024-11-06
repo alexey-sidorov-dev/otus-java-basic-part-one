@@ -7,6 +7,7 @@
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Check/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Dependency%20Review/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=alexey-sidorov-dev_otus-java-basic-part-one&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=alexey-sidorov-dev_otus-java-basic-part-one)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=alexey-sidorov-dev_otus-java-basic-part-one&metric=coverage)](https://sonarcloud.io/summary/new_code?id=alexey-sidorov-dev_otus-java-basic-part-one)
 [![LICENSE](https://img.shields.io/badge/license-ISC-brightgreen.svg)](ISC)
 
 ### Цель

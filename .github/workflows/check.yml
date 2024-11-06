@@ -18,8 +18,3 @@ jobs:
         run: echo "${{ secrets.ENV_PROPERTIES }}" > env.properties
       - name: Analyze with Sonar
         run: mvn clean -B verify -Dstyle.color=always
-      - name: Jacoco Report
-        uses: madrapps/jacoco-report@v1
-        with:
-          paths: /target/site/jacoco/jacoco.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
