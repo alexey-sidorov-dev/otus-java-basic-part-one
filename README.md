@@ -3,11 +3,11 @@
 ## Практика по основам языка Java. Часть 1.
 
 ---
-[![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Java%20CI/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
-[![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/Dependency%20Review/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
-[![Actions Status](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/SonarCloud%20Scanner/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions)
+[![build](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions/workflows/build.yml/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions/workflows/build.yml)
+[![check](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions/workflows/check.yml/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions/workflows/check.yml)
+[![Dependency Review](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/workflows/dependency-review.yml/badge.svg)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/actions/workflows/dependency-review.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=alexey-sidorov-dev_otus-java-basic-part-one&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=alexey-sidorov-dev_otus-java-basic-part-one)
-[![License](https://img.shields.io/github/license/alexey-sidorov-dev/otus-java-basic-part-one)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/alexey-sidorov-dev/otus-java-basic-part-one)](https://github.com/alexey-sidorov-dev/otus-java-basic-part-one/blob/master/LICENSE)
 
 ### Цель
 
